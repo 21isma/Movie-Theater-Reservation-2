@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theater Reservation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid row">
+        <h1>Movie Theater Reservation System</h1>
+
+        <div class="col-md-4">
+            <div class="container">
+                <h2>User Input</h2>
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Surname:</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="number" class="form-control" id="phone" placeholder="5xxxxxxxxx" required min="5000000000" step="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" placeholder="Age" required min="0" step="1">
+                    </div>
+                    <div class="container btns">
+                        <button id="loginButton" type="submit" class="btn btn-primary col-6 loginButton">Submit</button>
+                        <button onClick="window.location.reload();" type="reset" class="btn btn-secondary col-3 loginButton">Reset</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container">
+                    <div id="adminInterface">
+                        <h2>Admin Interface</h2>
+                        <form id="adminForm">
+                            <div class="form-group">
+                                <label for="rows">Number of Rows:</label>
+                                <input type="number" class="form-control" id="rows" placeholder="" required min="1" step="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="cols">Number of Columns:</label>
+                                <input type="number" class="form-control" id="cols" placeholder="" required min="1" step="1">
+                            </div>
+                            <div class="buttons">
+                                <button type="submit" class="btn btn-primary adminButton">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                <div class="userInterface">
+                    <h2>Seating Arrangement</h2>
+                    <div class="cinemaSeats" id="cinemaSeats"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container">
+                <h2>Reservation Details</h2>
+                <div id="reservationDetails"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Eskişehir Technical University. All rights reserved.</p>
+        <p>Designed and developed by Ismael Moussa Manou.</p>
+        <p>Eskişehir/Türkiye - Dosso/Niger</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

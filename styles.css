@@ -1,0 +1,82 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+input, select {
+    margin-bottom: 10px;
+}
+
+.loginButton {
+    display: inline-block;
+}
+
+.adminButton {
+    margin-top: 10px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+#cinemaSeats {
+    display: flex;
+    flex-direction: column;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #ddd;
+    border: 1px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #6ab04c;
+}
+
+.reserved {
+    background-color: #c62828;
+}
+
+.userInterface {
+    margin-top: 60px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    color: #f92991;
+}
+
+.reDetails {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+p {
+    margin-bottom: 7px;
+}
